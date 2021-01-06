@@ -38,9 +38,9 @@ while(num < len(questions)):
     for ans in current[1]:
         print(f"Press {q}: {ans}")
         q+=1
-    reply = input("Choose number")
-    current = questions[num]
+    reply = input("Choose number\n")
     num+=1
+
 print("congratz your a pikachu")
     
 
