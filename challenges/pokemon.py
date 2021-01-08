@@ -11,7 +11,7 @@ def main():
             exit()
         pokeapi = requests.get(f"https://pokeapi.co/api/v2/pokemon/{user_poke}")
         if pokeapi.status_code != 200:
-            print("Sorry thats not a a correct input")
+            print("Sorry thats not a correct input")
             continue
         pokeapi = pokeapi.json()
         wget.download(pokeapi["sprites"]["front_default"])
